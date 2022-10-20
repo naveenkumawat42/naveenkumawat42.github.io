@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela&family=Varela+Round&display=swap');
+
+body {
+    background-color:rgb(80, 94, 83);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+ 
+
+
+}
+
+nav ul li {
+    padding: 0 10px;
+    cursor: pointer;  
+
+}
+
+.Brand img {
+    width: 40px;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.Brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+
+.container {
+    
+    min-height: 50vh;
+    background-color: black;
+    color: white;
+    font-family: "roboto", "sans-serif";
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.scrollstyles{
+    scroll-behavior: auto;
+
+}
+
+.bottom {
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    
+}
+
+.icons{
+    margin-top: 14px;
+}
+.icons i {
+    cursor: pointer;
+    padding: 7px;
+}
+
+#myProgressBar{
+    height: 1%;
+    width: 80vw;
+    background-color: gray;
+    cursor: pointer;
+    animation: myProgressBar 0.1ms linear forwards;
+
+}
+
+.songitemcontainer{
+    margin-top: 60px;
+}
+
+
+.songItem{
+    height: 30px;
+    display: flex;
+    background-color: rgb(177, 185, 179);
+    width: 90%;
+    color: black;
+    margin: 12px 0 ;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 23px;
+
+
+}
+.songItem img{
+    width: 30px;
+    margin: 0 20px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songinfo{
+    position: absolute;
+    left: 9vw;
+    font-family: "roboto", "sans-serif";
+
+}
+.songinfo img{
+    height: 15px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
